@@ -9,7 +9,7 @@ const Columns = (props) => {
             <h2> {props.status.title} </h2>
             {props.tasks
                 .filter(el => el.status === props.status.title)
-                .map(el => <Card key={el._id} task={el} />)}
+                .map(el => <Card key={el._id} task={el} toggle={props.toggle}/>)}
 
         </div>
 

@@ -22,6 +22,10 @@ const Card = (props) => {
                         disabled={props.task.status === props.statuses[props.statuses.length - 1].title}
                         onClick={() => props.changeStatus(props.task, props.statuses, +1)}
                 > ❯ </button>
+
+                <button type="button" className="btn-outline-danger btn-sm" onClick={() => props.toggle('delete', props.task)}> detete </button>
+
+
             </div>
         </div>
 
